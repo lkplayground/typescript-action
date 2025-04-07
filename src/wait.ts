@@ -6,8 +6,9 @@
  */
 export async function wait(milliseconds: number): Promise<string> {
   return new Promise((resolve) => {
-    if (isNaN(milliseconds)) throw new Error('milliseconds is not a number')
+    if (isNaN(milliseconds))
+      throw new Error('milliseconds is not a number!!! (LK)')
 
-    setTimeout(() => resolve('done!'), milliseconds)
+    setTimeout(() => resolve('done (LK)!'), milliseconds)
   })
 }
